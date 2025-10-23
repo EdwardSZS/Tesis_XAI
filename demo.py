@@ -288,7 +288,7 @@ def proceso_dataset():
     if st.button("Iniciar Entrenamiento del Modelo"):
         model_path, train_imgs, train_masks = model_training()
         # Cargar modelo de la corrida que deseas probar (ajusta número si es necesario)
-    #model_path = "modelos/model_run1_seed30.h5"
+    model_path = "modelos/model_run1_seed30.h5"
     if 'key' not in st.session_state:
         st.session_state['key'] = model_path
     st.session_state['train_imgs'] = train_imgs
