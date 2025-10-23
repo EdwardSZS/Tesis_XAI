@@ -281,9 +281,9 @@ def proceso_dataset():
             results.append((seed, acc))
             st.write(f"✅ Accuracy final (validación): {acc:.4f}")
             
-            model_path = f"modelos/model_run{run+1}_seed{seed}.h5"
+            #model_path = f"modelos/model_run{run+1}_seed{seed}.h5"
             
-            model.save(model_path)
+            model_path=model
         return model_path, train_imgs, train_masks
     if st.button("Iniciar Entrenamiento del Modelo"):
         model_path, train_imgs, train_masks = model_training()
